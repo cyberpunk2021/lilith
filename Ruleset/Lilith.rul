@@ -1,0 +1,13 @@
+research:
+  - name: STR_LILITH_DEAD_GODDESS
+    points: 75
+    needItem: true
+ufopaedia:
+  - id: STR_LILITH_DEAD_GODDESS
+    type_id: 7
+    section: STR_LORE_UC
+    requires:
+      - STR_LILITH_DEAD_GODDESS
+    image_id: IMG_LILITH_DEAD_GODDESS
+    text: STR_LILITH_DEAD_GODDESS_UFOPEDIA
+    text_width: 193
