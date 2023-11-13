@@ -16051,3 +16051,5 @@ en-US:
   STR_MISSION_COMPLETE_RETURNING_TO_BASE: "MISSION COMPLETE - RETURNING TO BASE"
   STR_LILITH_DEAD_GODDESS: "The Dead Goddess"
   STR_LILITH_DEAD_GODDESS_UFOPEDIA: "After going through the scriptures once more, you notice a passage about a sect of heretics, the servants of Lilith. This ultra-minority group of Lokk'Naar worships the goddess Lilith and none of the other gods!{NEWLINE}{NEWLINE}Even more surprising, according to the text, this goddess died and it's her remains that are worshipped."
+  STR_LILITH_HUNT_REMAINS: "!Hunt for the goddess' remains!"
+  STR_LILITH_HUNT_REMAINS_UFOPEDIA: "Hunting for the remains of a so-called goddess guarded by fanatic nut jobs is probably a colossal waste of time. Lokk'Naar aren't exactly thrilled at the prospect, but just replied with an \"pfft... whatever\".{NEWLINE}They indicate the various strongholds of the sect without hiding their disdain."

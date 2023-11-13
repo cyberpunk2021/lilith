@@ -2,6 +2,11 @@ research:
   - name: STR_LILITH_DEAD_GODDESS
     points: 75
     needItem: true
+  - name: STR_LILITH_HUNT_REMAINS
+    cost: 5
+    points: 25
+    dependencies:
+      - STR_LILITH_DEAD_GODDESS
 ufopaedia:
   - id: STR_LILITH_DEAD_GODDESS
     type_id: 7
@@ -11,3 +16,11 @@ ufopaedia:
     image_id: IMG_LILITH_DEAD_GODDESS
     text: STR_LILITH_DEAD_GODDESS_UFOPEDIA
     text_width: 193
+  - id: STR_LILITH_HUNT_REMAINS
+    type_id: 7
+    section: STR_LORE_UC
+    requires:
+      - STR_LILITH_HUNT_REMAINS
+    image_id: IMG_LILITH_HUNT_REMAINS
+    text: STR_LILITH_HUNT_REMAINS_UFOPEDIA
+    text_width: 168
