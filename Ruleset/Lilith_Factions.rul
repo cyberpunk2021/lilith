@@ -1,0 +1,14 @@
+missionScripts:
+  - type: lilithRemains
+    missionWeights:
+      0:
+        STR_LOC_LILITH_REMAINS: 100
+    regionWeights:
+      0:
+        REGION_LOKNAR_ALTAR: 100
+    useTable: false
+    researchTriggers:
+      STR_LILITH_HUNT_REMAINS: true
+    executionOdds: 100
+    startDelay: 30
+    randomDelay: 4000
