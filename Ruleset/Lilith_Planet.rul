@@ -1,0 +1,5 @@
+globe:
+  textures:
+    - id: -900
+      deployments:
+        STR_LOC_LILITH_REMAINS: 100

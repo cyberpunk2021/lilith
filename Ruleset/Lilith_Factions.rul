@@ -12,3 +12,62 @@ missionScripts:
     executionOdds: 100
     startDelay: 30
     randomDelay: 4000
+alienMissions:
+  - type: STR_LOC_LILITH_REMAINS
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_RACE_VAMPIRE: 25
+          STR_MONSTER_RACE: 15
+          STR_RACE_SPIDER: 15
+          STR_RACE_RAT: 25
+          STR_DEMON: 10
+          STR_GHOST: 10
+    waves: &dummyWave
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 1000
+        objective: true
+alienDeployments:
+  - type: STR_LOC_LILITH_REMAINS
+    startingCondition: STR_STARCON_UNDERGROUND_TIGHT
+    alert: STR_ALERT_LILITH_REMAINS
+    alertBackground: IMG_LOC_LILITH_REMAINS.SCR
+    alertDescription: STR_LOC_LILITH_REMAINS_BRIEFING
+    briefing:
+      palette: 1
+      music: GMENBASE
+      background: IMG_LOC_LILITH_REMAINS.SCR
+      showTarget: false
+      title: STR_LOC_LILITH_REMAINS_TITLE
+      desc: STR_LOC_LILITH_REMAINS_BRIEFING
+    markerName: STR_MARKER_LOC_LOKNAR_ALTAR
+    duration: [100, 200]
+    width: 40
+    length: 40
+    height: 4
+    shade: 10
+    music:
+      - GMTACTIC1
+      - GMTACTIC2
+    terrains:
+      - CAVES_ALTAR_D
+    data:
+      - alienRank: 4
+        lowQty: 4
+        highQty: 8
+        dQty: 4
+        percentageOutsideUfo: 50
+        itemSets: &itemSetsEmpty
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
