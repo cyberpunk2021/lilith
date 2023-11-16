@@ -42,7 +42,7 @@ alienDeployments:
       showTarget: false
       title: STR_LOC_LILITH_REMAINS_TITLE
       desc: STR_LOC_LILITH_REMAINS_BRIEFING
-    markerName: STR_MARKER_COMMS_TOWER
+    markerName: STR_MARKER_LOC_LILITH_REMAINS
     duration: [100, 200]
     width: 40
     length: 40
