@@ -1,3 +1,38 @@
+items:
+  - type: STR_LOKNAR_FANATIC_LEADER
+    categories: [STR_BAT_CAT_PEOPLE]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 500
+units:
+  - type: STR_LOKNAR_FANATIC_LEADER
+    race: STR_LOKNAR
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 49
+      stamina: 60
+      health: 105
+      bravery: 80
+      reactions: 30
+      firing: 50
+      throwing: 50
+      strength: 72
+      psiStrength: 25
+      psiSkill: 0
+      melee: 76
+      mana: 80
+    armor: LOKNAR_ARMOR_LEADER
+    standHeight: 22
+    kneelHeight: 14
+    value: 40
+    deathSound: [141, 142, 143, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 688, 689, 690, 691, 692, 693, 694, 695]
+    panicSound: [172, 176, 177, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 695, 696]
+    berserkSound: [371, 372, 373, 374, 375, 376, 377]
+    energyRecovery: 20
+    intelligence: 4
+    aggression: 1
+    canSurrender: false
 missionScripts:
   - type: lilithRemains
     missionWeights:
@@ -18,18 +53,17 @@ alienMissions:
     spawnZone: 0
     raceWeights:
       0:
-          STR_RACE_VAMPIRE: 25
-          STR_MONSTER_RACE: 15
-          STR_RACE_SPIDER: 15
-          STR_RACE_RAT: 25
-          STR_DEMON: 10
-          STR_GHOST: 10
+          STR_LOKNAR_FANATICS: 100
     waves: &dummyWave
       - ufo: dummy
         count: 1
         trajectory: CA_SPAWN
         timer: 1000
         objective: true
+alienRaces:
+  - id: STR_LOKNAR_FANATICS
+    members:
+      - STR_LOKNAR_FANATIC_LEADER
 alienDeployments:
   - type: STR_LOC_LILITH_REMAINS
     alert: STR_ALERT_LILITH_REMAINS
@@ -44,13 +78,10 @@ alienDeployments:
       desc: STR_LOC_LILITH_REMAINS_BRIEFING
     markerName: STR_MARKER_LOC_LILITH_REMAINS
     duration: [100, 200]
-    width: 40
-    length: 40
-    height: 4
-    shade: 10
-    music:
-      - GMTACTIC1
-      - GMTACTIC2
+    width: 60
+    length: 60
+    height: 10
+    script: COMMS_TOWER_LANDING
     terrains:
       - FOREST
     data:

@@ -1,0 +1,67 @@
+armors:
+  - type: LOKNAR_ARMOR_LEADER
+    spriteSheet: BAN_12.PCK
+    spriteInv: BanditDudeInventoryImage
+    corpseBattle:
+      - STR_BAN_12_CORPSE_BATTLE
+    corpseGeo: STR_GOVT_CORPSE
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 96, 160, 160, 163]
+    visibilityAtDark: 9
+    frontArmor: 16
+    sideArmor: 10
+    rearArmor: 12
+    underArmor: 6
+    meleeDodge:
+      reactions: 0.25
+      melee: 0.15
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      time: &SECTION_TIME_RECOVERY_NORMAL
+        tu: 0.5
+        manaNormalized: 125.0
+      mana: &SECTION_FRESH_RECOVERY_NORMAL
+        health: -0.1
+        healthCurrent: 0.1
+        flatOne: 1
+      morale: &SECTION_MORALE_RECOVERY_NORMAL
+        flatHundred: -0.1
+        manaNormalized: 13.0
+        moraleCurrent: -0.07
+        bravery: 0.08
+      energy: &SECTION_ENERGY_RECOVERY_NORMAL
+        manaNormalized: 10.0
+        healthNormalized: 10.0
+        stamina: 0.2
+        stunCurrent: -0.2
+      stun: &SECTION_STUN_RECOVERY_NORMAL
+        healthCurrent: 0.08
+        health: -0.05
+        stunCurrent: 0.036
+      health: &SECTION_HEALTH_RECOVERY_NORMAL
+        stunNormalized: -0.165
+    psiDefence: &SECTION_PSIDEF_NORMAL
+      psiStrength: 1.0
+      psiSkill: 0.2
+      moraleCurrent: 0.33
+      bravery: 0.2
+    damageModifier:
+      - 1.5
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 0.85
+      - 4.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.2
+      - 1.0
+      - 0.85
+    specialWeapon: STR_UNARMED_BASIC
+    loftempsSet: [ 2 ]
