@@ -10,28 +10,26 @@ units:
     race: STR_LOKNAR
     rank: STR_LIVE_LEADER
     stats:
-      tu: 49
-      stamina: 60
-      health: 105
-      bravery: 80
-      reactions: 30
-      firing: 50
+      tu: 80
+      stamina: 120
+      health: 75
+      bravery: 100
+      reactions: 120
+      firing: 100
       throwing: 50
-      strength: 72
-      psiStrength: 25
+      strength: 40
+      psiStrength: 50
       psiSkill: 0
-      melee: 76
-      mana: 80
+      melee: 120
+      mana: 50
     armor: LOKNAR_ARMOR_LEADER
-    standHeight: 22
-    kneelHeight: 14
-    value: 40
-    deathSound: [141, 142, 143, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 688, 689, 690, 691, 692, 693, 694, 695]
-    panicSound: [172, 176, 177, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 695, 696]
-    berserkSound: [371, 372, 373, 374, 375, 376, 377]
-    energyRecovery: 20
-    intelligence: 4
-    aggression: 1
+    standHeight: 16
+    kneelHeight: 12
+    value: 100
+    deathSound: 148
+    energyRecovery: 40
+    intelligence: 6
+    aggression: 4
     canSurrender: false
 missionScripts:
   - type: lilithRemains
@@ -64,6 +62,7 @@ alienRaces:
   - id: STR_LOKNAR_FANATICS
     members:
       - STR_LOKNAR_FANATIC_LEADER
+      - STR_LOKNAR_FANATIC_LEADER
 alienDeployments:
   - type: STR_LOC_LILITH_REMAINS
     alert: STR_ALERT_LILITH_REMAINS
@@ -85,19 +84,51 @@ alienDeployments:
     terrains:
       - FOREST
     data:
-      - alienRank: 4
-        lowQty: 4
-        highQty: 8
-        dQty: 4
-        percentageOutsideUfo: 50
-        itemSets: &itemSetsEmpty
+      - alienRank: 1
+        lowQty: 6
+        highQty: 10
+        dQty: 5
+        percentageOutsideUfo: 0
+        itemSets:
           -
-            []
+            - STR_SHOTGUN_G
+            - STR_SHOTGUN_G_SHELLS
+            - STR_SHOTGUN_G_SHELLS
+            - STR_SHOTGUN_G_SHELLS
+            - STR_CREDIT_CHIP_D
+            - STR_CREDIT_CHIP_D
           -
-            []
+            - STR_MACHETE
+            - STR_FLINTLOCK_PISTOL
+            - STR_FLINTLOCK_BALLS
+            - STR_FLINTLOCK_BALLS
+            - STR_FLINTLOCK_BALLS
+            - STR_CREDIT_CHIP_D
+            - STR_BEER
           -
-            []
+            - STR_FLINTLOCK_MUSKET
+            - STR_FLINTLOCK_BALLS
+            - STR_FLINTLOCK_BALLS
+            - STR_FLINTLOCK_BALLS
+            - STR_FLINTLOCK_BALLS
+            - STR_CREDIT_CHIP_D
+            - STR_CREDIT_CHIP_D
+            - STR_CIGS
           -
-            []
+            - STR_KNOIF_BANDIT
+            - STR_REVOLVER
+            - STR_REVOLVER_DRUM
+            - STR_REVOLVER_DRUM
+            - STR_REVOLVER_DRUM
+            - STR_GRENADE
+            - STR_BEER
+            - STR_CIGS
+            - STR_CREDIT_CHIP_M
+            - STR_CREDIT_CHIP_M
           -
-            []
+            - STR_FLINTLOCK_MUSKET
+            - STR_FLINTLOCK_BALLS
+            - STR_FLINTLOCK_BALLS
+            - STR_FLINTLOCK_BALLS
+            - STR_INCENDIARY_GRENADE
+            - STR_BEER
