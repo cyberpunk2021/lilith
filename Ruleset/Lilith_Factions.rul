@@ -12,12 +12,12 @@ units:
     stats:
       tu: 80
       stamina: 120
-      health: 75
+      health: 60
       bravery: 100
       reactions: 120
       firing: 100
       throwing: 50
-      strength: 40
+      strength: 50
       psiStrength: 50
       psiSkill: 0
       melee: 120
@@ -29,6 +29,30 @@ units:
     deathSound: 148
     energyRecovery: 40
     intelligence: 6
+    aggression: 4
+    canSurrender: false
+  - type: STR_LOKNAR_FANATIC_KNIGHT
+    race: STR_LOKNAR
+    stats:
+      tu: 60
+      stamina: 120
+      health: 70
+      bravery: 80
+      reactions: 120
+      firing: 100
+      throwing: 50
+      strength: 40
+      psiStrength: 50
+      psiSkill: 0
+      melee: 100
+      mana: 50
+    armor: LOKNAR_ARMOR_KNIGHT
+    standHeight: 16
+    kneelHeight: 12
+    value: 50
+    deathSound: 148
+    energyRecovery: 40
+    intelligence: 5
     aggression: 4
     canSurrender: false
 missionScripts:
@@ -62,7 +86,10 @@ alienRaces:
   - id: STR_LOKNAR_FANATICS
     members:
       - STR_LOKNAR_FANATIC_LEADER
-      - STR_LOKNAR_FANATIC_LEADER
+      - STR_LOKNAR_FANATIC_KNIGHT
+    membersRandom:
+    - [STR_LOKNAR_FANATIC_LEADER]
+    - [STR_LOKNAR_FANATIC_KNIGHT]
 alienDeployments:
   - type: STR_LOC_LILITH_REMAINS
     alert: STR_ALERT_LILITH_REMAINS
@@ -91,44 +118,15 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets:
           -
-            - STR_SHOTGUN_G
-            - STR_SHOTGUN_G_SHELLS
-            - STR_SHOTGUN_G_SHELLS
-            - STR_SHOTGUN_G_SHELLS
-            - STR_CREDIT_CHIP_D
-            - STR_CREDIT_CHIP_D
+            - STR_XBOW
+            - STR_XBOW_QUIVER
+            - STR_XBOW_QUIVER
           -
-            - STR_MACHETE
-            - STR_FLINTLOCK_PISTOL
-            - STR_FLINTLOCK_BALLS
-            - STR_FLINTLOCK_BALLS
-            - STR_FLINTLOCK_BALLS
-            - STR_CREDIT_CHIP_D
-            - STR_BEER
+            - STR_LONGBOW
+            - STR_LONGBOW_QUIVER
           -
-            - STR_FLINTLOCK_MUSKET
-            - STR_FLINTLOCK_BALLS
-            - STR_FLINTLOCK_BALLS
-            - STR_FLINTLOCK_BALLS
-            - STR_FLINTLOCK_BALLS
-            - STR_CREDIT_CHIP_D
-            - STR_CREDIT_CHIP_D
-            - STR_CIGS
+            - STR_PIKE
           -
-            - STR_KNOIF_BANDIT
-            - STR_REVOLVER
-            - STR_REVOLVER_DRUM
-            - STR_REVOLVER_DRUM
-            - STR_REVOLVER_DRUM
-            - STR_GRENADE
-            - STR_BEER
-            - STR_CIGS
-            - STR_CREDIT_CHIP_M
-            - STR_CREDIT_CHIP_M
+            - STR_SWORD_MDV
           -
-            - STR_FLINTLOCK_MUSKET
-            - STR_FLINTLOCK_BALLS
-            - STR_FLINTLOCK_BALLS
-            - STR_FLINTLOCK_BALLS
-            - STR_INCENDIARY_GRENADE
-            - STR_BEER
+            - STR_BATTLE_AX

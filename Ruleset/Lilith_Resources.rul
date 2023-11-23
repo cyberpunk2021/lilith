@@ -5,3 +5,10 @@ extraSprites:
     fileSingle: Resources/Pedia_Lilith/Lilith_Hunt_Remains.png
   - typeSingle: IMG_LOC_LILITH_REMAINS.SCR
     fileSingle: Resources/Backgrounds_Lilith/Loc_Lilith_Remains.png
+  - type: LOK_LEADER_ARMOR.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Sprites_Lilith/LOK_LEADER_ARMOR.png
