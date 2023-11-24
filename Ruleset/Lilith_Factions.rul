@@ -15,7 +15,7 @@ units:
       health: 60
       bravery: 100
       reactions: 120
-      firing: 100
+      firing: 50
       throwing: 50
       strength: 50
       psiStrength: 50
@@ -29,24 +29,27 @@ units:
     deathSound: 148
     energyRecovery: 40
     intelligence: 6
-    aggression: 4
+    aggression: 2
     canSurrender: false
+    builtInWeaponSets:
+          -
+            - STR_BATTLE_AX
   - type: STR_LOKNAR_FANATIC_KNIGHT
     race: STR_LOKNAR
     stats:
       tu: 60
-      stamina: 120
-      health: 70
+      stamina: 100
+      health: 50
       bravery: 80
-      reactions: 120
-      firing: 100
+      reactions: 110
+      firing: 50
       throwing: 50
       strength: 40
       psiStrength: 50
       psiSkill: 0
       melee: 100
       mana: 50
-    armor: LOKNAR_ARMOR_KNIGHT
+    armor: STR_LOKNAR_PLATE_MAIL_UC
     standHeight: 16
     kneelHeight: 12
     value: 50
@@ -55,6 +58,46 @@ units:
     intelligence: 5
     aggression: 4
     canSurrender: false
+    builtInWeaponSets:
+          -
+            - STR_PIKE
+          -
+            - STR_SWORD_MDV
+  - type: STR_LOKNAR_FANATIC_ARCHER
+    race: STR_LOKNAR
+    stats:
+      tu: 50
+      stamina: 80
+      health: 40
+      bravery: 70
+      reactions: 100
+      firing: 100
+      throwing: 100
+      strength: 20
+      psiStrength: 50
+      psiSkill: 0
+      melee: 50
+      mana: 50
+    armor: STR_LOKNAR_SLAYER_UC
+    standHeight: 16
+    kneelHeight: 12
+    value: 40
+    deathSound: 148
+    energyRecovery: 40
+    intelligence: 5
+    aggression: 1
+    canSurrender: false
+    builtInWeaponSets:
+          -
+            - STR_XBOW
+            - STR_XBOW_QUIVER
+            - STR_XBOW_QUIVER
+            - STR_KNOIF
+          -
+            - STR_LONGBOW
+            - STR_LONGBOW_QUIVER
+            - STR_LONGBOW_QUIVER
+            - STR_KNOIF
 missionScripts:
   - type: lilithRemains
     missionWeights:
@@ -87,9 +130,11 @@ alienRaces:
     members:
       - STR_LOKNAR_FANATIC_LEADER
       - STR_LOKNAR_FANATIC_KNIGHT
+      - STR_LOKNAR_FANATIC_ARCHER
     membersRandom:
     - [STR_LOKNAR_FANATIC_LEADER]
-    - [STR_LOKNAR_FANATIC_KNIGHT]
+    - [STR_LOKNAR_FANATIC_KNIGHT, STR_LOKNAR_FANATIC_ARCHER]
+    - [STR_LOKNAR_FANATIC_KNIGHT, STR_LOKNAR_FANATIC_ARCHER]
 alienDeployments:
   - type: STR_LOC_LILITH_REMAINS
     alert: STR_ALERT_LILITH_REMAINS
@@ -111,22 +156,19 @@ alienDeployments:
     terrains:
       - FOREST
     data:
-      - alienRank: 1
+      - alienRank: 2
         lowQty: 6
         highQty: 10
         dQty: 5
         percentageOutsideUfo: 0
-        itemSets:
+        itemSets: &itemSetsEmpty
           -
-            - STR_XBOW
-            - STR_XBOW_QUIVER
-            - STR_XBOW_QUIVER
+            []
           -
-            - STR_LONGBOW
-            - STR_LONGBOW_QUIVER
+            []
           -
-            - STR_PIKE
+            []
           -
-            - STR_SWORD_MDV
+            []
           -
-            - STR_BATTLE_AX
+            []
