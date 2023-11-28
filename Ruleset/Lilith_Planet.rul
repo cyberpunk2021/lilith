@@ -40,3 +40,20 @@ regions:
         - [32.625, 32.625, -0.375, -0.375, -900] #Kampala
         - [36.681, 36.681, -33.563, -33.563, -900] #Damaszek
         - [292.28, 292.28, 16.93, 16.93, -900] #La Paz
+terrains:
+  - name: LILITH_LOKNAR_STRONGHOLD
+    mapDataSets:
+      - BLANKS
+      - CAVEBLACK
+      - SIETCH_DARK
+      - CATACDECOR
+      - LAVA
+      - DUNGEON
+      - XOPSMUJUNGLEADDONDARK
+      - DUNGEONEXTRA
+      - GRAVES_RED
+      - NECROPOLIS_DECOR
+    mapBlocks:
+      - name: LILITH_LOKNAR_00
+        width: 20
+        length: 20

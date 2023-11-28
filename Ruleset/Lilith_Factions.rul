@@ -133,8 +133,8 @@ alienRaces:
       - STR_LOKNAR_FANATIC_ARCHER
     membersRandom:
     - [STR_LOKNAR_FANATIC_LEADER]
-    - [STR_LOKNAR_FANATIC_KNIGHT, STR_LOKNAR_FANATIC_ARCHER]
-    - [STR_LOKNAR_FANATIC_KNIGHT, STR_LOKNAR_FANATIC_ARCHER]
+    - [STR_LOKNAR_FANATIC_KNIGHT]
+    - [STR_LOKNAR_FANATIC_ARCHER]
 alienDeployments:
   - type: STR_LOC_LILITH_REMAINS
     alert: STR_ALERT_LILITH_REMAINS
@@ -152,14 +152,13 @@ alienDeployments:
     width: 60
     length: 60
     height: 10
-    script: COMMS_TOWER_LANDING
     terrains:
-      - FOREST
+      - LILITH_LOKNAR_STRONGHOLD
     data:
-      - alienRank: 2
-        lowQty: 6
-        highQty: 10
-        dQty: 5
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
         percentageOutsideUfo: 0
         itemSets: &itemSetsEmpty
           -
@@ -172,3 +171,15 @@ alienDeployments:
             []
           -
             []
+      - alienRank: 1
+        lowQty: 5
+        highQty: 10
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: *itemSetsEmpty
+      - alienRank: 2
+        lowQty: 5
+        highQty: 10
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: *itemSetsEmpty
