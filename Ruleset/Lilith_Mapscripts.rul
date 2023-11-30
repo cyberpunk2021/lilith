@@ -1,0 +1,7 @@
+mapScripts:
+  - type: LILITH_LOKNAR_STRONGHOLD
+    commands:
+    - type: addCraft
+    - type: addBlock
+      size: 2
+    - type: fillArea
