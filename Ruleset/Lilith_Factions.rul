@@ -183,33 +183,3 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: *itemSetsEmpty
-ufos:
-  - type: STR_LILITH_LOKNAR_STRONGHOLD
-    size: STR_VERY_SMALL
-    modSprite: InterceptionProbe
-    damageMax: 1
-    speedMax: 500
-    accel: 1
-    power: 0
-    range: 0
-    score: 10
-    missionScore: 0
-    reload: 99
-    breakOffTime: 100
-    battlescapeTerrainData:
-      name: LILITH_LOKNAR_STRONGHOLD
-      mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-      - SIETCH_DARK
-      - CATACDECOR
-      - LAVA
-      - DUNGEON
-      - XOPSMUJUNGLEADDONDARK
-      - DUNGEONEXTRA
-      - GRAVES_RED
-      - NECROPOLIS_DECOR
-      mapBlocks:
-        - name: LILITH_LOKNAR_STRONGHOLD
-          width: 30
-          length: 20
