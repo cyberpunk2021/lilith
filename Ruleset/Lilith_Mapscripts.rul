@@ -1,7 +1,10 @@
 mapScripts:
   - type: LILITH_LOKNAR_STRONGHOLD
     commands:
+    - type: addUFO
+      UFOName: STR_LILITH_LOKNAR_STRONGHOLD
     - type: addCraft
     - type: addBlock
       size: 2
+      executions: 1
     - type: fillArea
