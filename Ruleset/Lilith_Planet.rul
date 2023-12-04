@@ -47,7 +47,6 @@ terrains:
       - CAVEBLACK
       - SIETCH_DARK
       - CATACDECOR
-      - LAVA
       - DUNGEON
       - XOPSMUJUNGLEADDONDARK
       - DUNGEONEXTRA
@@ -60,6 +59,10 @@ terrains:
         length: 10
         groups: 1
       - name: LILITH_LOKNAR_01
+        width: 10
+        length: 10
+        groups: 1
+      - name: LILITH_LOKNAR_02
         width: 10
         length: 10
       - name: LILITH_LOKNAR_10
