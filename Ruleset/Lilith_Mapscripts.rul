@@ -4,4 +4,6 @@ mapScripts:
     - type: addCraft
     - type: addBlock
       size: [3,2,0]
+    - type: addBlock
+      size: [2,1,0]
     - type: fillArea

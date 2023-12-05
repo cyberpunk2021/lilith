@@ -65,6 +65,24 @@ terrains:
       - name: LILITH_LOKNAR_02
         width: 10
         length: 10
+      - name: LILITH_LOKNAR_03
+        width: 10
+        length: 10
+      - name: LILITH_LOKNAR_04
+        width: 10
+        length: 10
+      - name: LILITH_LOKNAR_05
+        width: 10
+        length: 10
+      - name: LILITH_LOKNAR_06
+        width: 10
+        length: 10
+      - name: LILITH_LOKNAR_07
+        width: 10
+        length: 10
       - name: LILITH_LOKNAR_10
         width: 30
         length: 20
+      - name: LILITH_LOKNAR_11
+        width: 20
+        length: 10
