@@ -80,6 +80,9 @@ terrains:
       - name: LILITH_LOKNAR_07
         width: 10
         length: 10
+      - name: LILITH_LOKNAR_08
+        width: 10
+        length: 10
       - name: LILITH_LOKNAR_10
         width: 30
         length: 20
